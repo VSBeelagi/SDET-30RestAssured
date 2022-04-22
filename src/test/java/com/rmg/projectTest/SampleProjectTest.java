@@ -13,6 +13,7 @@ public class SampleProjectTest {
 		Response resp = RestAssured.get("http://localhost:8084/projects");
 	//	System.out.println(resp.asString());
 	//	resp.prettyPrint();
+		
 		resp.then().log().all();
 	}
 	
